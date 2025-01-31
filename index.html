@@ -57,7 +57,7 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body class="adlam font-normal">
+  <body class="adlam font-normal overflow-x-hidden">
     <header>
       <!-- navbar -->
       <nav>
@@ -112,7 +112,7 @@
                   />
                 </svg>
                 <span
-                  class="badge badge-xs badge-warning indicator-item"
+                  class="badge animate-ping badge-xs badge-warning indicator-item"
                 ></span>
               </div>
             </button>
@@ -151,12 +151,12 @@
             joy!
           </p>
           <button
-            class="sora btn btn-sm md:btn-md lg:btn-lg bg-primary-color font-normal lg:text-2xl"
+            class="animate-bounce sora btn btn-sm md:btn-md lg:btn-lg bg-primary-color font-normal lg:text-2xl"
           >
             Find a pet
           </button>
         </div>
-        <div class="z-10 w-full pt-52 lg:pt-0 lg:pl-72">
+        <div class="z-10 w-full pt-44 lg:pt-0 lg:pl-72">
           <img src="Assignment_03_Category_0001/c1-assets/cat-big.png" alt="" />
         </div>
       </div>
@@ -237,29 +237,31 @@
       </section>
       <section class="p-3 lg:bg-lite lg:p-24">
         <div>
-          <h1 class="text-2xl py-10">Browse By Categories</h1>
+          <h1 class="text-2xl lg:text-3xl py-10">Browse By Categories</h1>
         </div>
-
         <div class="grid gap-5 grid-cols-1 lg:grid-cols-3">
           <!-- tshirt-big-card -->
-          <div class="bg-secondary-color rounded-xl px-5 pt-10 pb-52 relative">
+          <div
+            class="bg-secondary-color rounded-xl px-5 lg:px-8 pt-10 pb-52 relative"
+          >
             <h1 class="text-2xl">T-Shirt Foe Dogs</h1>
             <p class="sora font-light py-5 text-xl">
-              Discover a world of treats, toys, <br />
-              and essentials handpicked for
+              Discover a world of treats, toys, and essentials handpicked for
             </p>
-            <button class="btn sora btn-sm md:btn-md lg:btn-lg font-light">
+            <button
+              class="btn animate-bounce sora btn-sm md:btn-md lg:btn-lg font-light"
+            >
               Shop Now
             </button>
             <img
-              class="w-52 absolute -bottom-3 right-5"
+              class="w-52 absolute -bottom-2 right-5"
               src="/Assignment_03_Category_0001/c1-assets/cute-pet-mid.png"
               alt=""
             />
           </div>
           <!-- tshirt small cards -->
           <div class="col-span-2">
-            <div class="grid grid-cols-2 gap-2 lg:grid-cols-3 lg:gap-5">
+            <div class="grid grid-cols-2 gap-2 lg:grid-cols-3 lg:gap-7">
               <div
                 class="flex items-center justify-center gap-5 border-2 rounded-lg p-2 w-full bg-white lg:p-4 lg:justify-start"
               >
@@ -418,13 +420,13 @@
       <!-- low price -->
       <section class="p-3 lg:p-24">
         <div>
-          <h1 class="text-3xl mt-10 mb-5">Everyday low Price</h1>
+          <h1 class="text-3xl mt-10 mb-16">Everyday low Price</h1>
         </div>
         <!-- low price cards -->
         <div class="flex flex-col justify-center lg:gap-10 lg:flex-row">
           <!-- big card -->
           <div
-            class="bg-gradient-to-r from-gr-1 to-gr-2 p-3 flex flex-col text-nowrap lg:items-center lg:justify-center lg:py-5 lg:px-10 lg:pl-52 lg:text-wrap rounded-xl lg:flex-row overflow-hidden"
+            class="bg-gradient-to-r from-gr-1 to-gr-2 p-3 flex flex-col text-nowrap lg:items-center lg:justify-center lg:py-5 lg:px-10 lg:pl-52 lg:text-nowrap rounded-xl lg:flex-row overflow-hidden"
           >
             <div class="flex flex-col gap-5">
               <p class="hidden sora font-light text-3xl lg:flex">Under Price</p>
@@ -443,44 +445,156 @@
           </div>
           <!-- small card -->
           <div
-            class="bg-gradient-to-r from-gr-3 to-gr-4 rounded-xl p-3 lg:p-16"
+            class="bg-gradient-to-r from-gr-3 to-gr-4 rounded-xl p-3 lg:p-16 overflow-hidden"
           >
             <div>
               <h1 class="text-4xl">T-Shirt for Dogs</h1>
               <p class="text-5xl lg:text-6xl text-yellow-400">$7.99</p>
             </div>
-            <div>
-              <img
-                class="relative left-16 -top-10"
-                src="/Assignment_03_Category_0001/c1-assets/cute-pet-mid.png"
-                alt=""
-              />
+
+            <img
+              class="relative left-12 -top-10"
+              src="/Assignment_03_Category_0001/c1-assets/cute-pet-mid.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="flex items-center justify-center bg-lite animate-pulse">
+        <div class="stats shadow">
+          <div class="stat">
+            <div class="stat-figure text-primary-color">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                class="inline-block h-8 w-8 stroke-current"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                ></path>
+              </svg>
+            </div>
+            <div class="stat-title">Total Likes</div>
+            <div class="stat-value text-primary-color">25.6K</div>
+            <div class="stat-desc">21% more than last month</div>
+          </div>
+
+          <div class="stat">
+            <div class="stat-figure text-secondary-color">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                class="inline-block h-8 w-8 stroke-current"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M13 10V3L4 14h7v7l9-11h-7z"
+                ></path>
+              </svg>
+            </div>
+            <div class="stat-title">Page Views</div>
+            <div class="stat-value text-black">2.6M</div>
+            <div class="stat-desc">21% more than last month</div>
+          </div>
+
+          <div class="stat">
+            <div class="stat-figure text-secondary">
+              <div class="avatar online">
+                <div class="w-16 rounded-full">
+                  <img
+                    src="Assignment_03_Category_0001/c1-assets/dog-cartoon.png"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="stat-value">86%</div>
+            <div class="stat-title">Liked</div>
+            <div class="stat-desc text-secondary-color">
+              31 Currently Visiting
             </div>
           </div>
         </div>
       </section>
-      <section class="m-3 bg-lite p-5 flex flex-col items-center gap-5 lg:m-24">
-        <img
-          class="w-full p-14 pb-5"
-          src="/Assignment_03_Category_0001/c1-assets/cute-pet-mid.png"
-          alt=""
-        />
-        <h1 class="text-3xl text-center">Get Pawsome News!</h1>
-        <p class="sora text-lg text-center">
-          Exclusive training tips, ticks, product deals and more.
-        </p>
-        <input
-          class="input sora w-full"
-          type="email"
-          name=""
-          id=""
-          placeholder="Enter email...."
-        />
-        <button class="sora text-lg btn bg-primary-color w-32">
-          Subscribe
-        </button>
-      </section>
+
+      <div class="relative">
+        <section
+          class="m-3 bg-lite p-5 flex flex-col items-center lg:justify-start gap-5 lg:m-24 lg:flex-row rounded-xl"
+        >
+          <img
+            class="w-full p-14 pb-5 lg:px-32 lg:pb-0 lg:w-fit"
+            src="/Assignment_03_Category_0001/c1-assets/cute-pet-mid.png"
+            alt=""
+          />
+          <div class="flex flex-col items-center gap-5 lg:items-start">
+            <h1 class="text-3xl text-center lg:text-5xl">Get Pawsome News!</h1>
+            <p class="sora text-lg text-center lg:text-2xl">
+              Exclusive training tips, ticks, product deals and more.
+            </p>
+            <input
+              class="input sora w-full lg:h-16 lg:text-lg"
+              type="email"
+              name=""
+              id=""
+              placeholder="Enter email...."
+            />
+            <button
+              class="sora text-lg btn btn-lg bg-primary-color w-32 lg:w-52"
+            >
+              Subscribe
+            </button>
+          </div>
+        </section>
+        <div
+          class="h-96 bg-secondary-color absolute top-96 lg:top-52 -z-10 w-full"
+        ></div>
+      </div>
     </main>
-    <footer></footer>
+    <footer
+      class="bg-secondary-color px-3 py-10 lg:p-28 lg:flex lg:justify-between"
+    >
+      <div class="flex flex-col gap-3">
+        <div class="flex items-center gap-3">
+          <img
+            src="Assignment_03_Category_0001/c1-assets/logo-footer.png"
+            alt=""
+          />
+          <h1 class="text-xl lg:text-2xl">
+            Browse <span class="text-yellow-200">4</span> Pets
+          </h1>
+        </div>
+        <p class="sora lg:text-xl lg:w-96">
+          Discover a world of treats, toys, and essentials handpicked for your
+          furry friends
+        </p>
+      </div>
+      <div class="flex sora flex-col gap-4 py-8">
+        <li class="list-none">
+          <a class="text-lg font-semibold lg:text-xl" href="">Find a pet</a>
+        </li>
+        <li class="list-none">
+          <a class="text-lg font-semibold lg:text-xl" href="">Breeds</a>
+        </li>
+        <li class="list-none">
+          <a class="text-lg font-semibold lg:text-xl" href="">Contact us</a>
+        </li>
+      </div>
+      <div>
+        <div class="sora text-xl font-semibold py-5">Follow Us</div>
+        <div class="flex gap-5">
+          <i class="fa-brands fa-instagram text-3xl"></i>
+          <i class="fa-brands fa-facebook text-3xl"></i>
+          <i class="fa-brands fa-linkedin text-3xl"></i>
+          <i class="fa-brands fa-youtube text-3xl"></i>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
